@@ -1,13 +1,14 @@
 # Credit Card Default Risk Analysis 
-The purpose of this project is to conduct quantitative analysis on credit card default risk by using 3 machine learning models with accessible customer data, instead of credit score or credit history, with the goal of assisting and speeding up the human decision making process.
+The purpose of this project is to conduct quantitative analysis on credit card default risk by using 5 machine learning models with accessible customer data, instead of credit score or credit history, with the goal of assisting and speeding up the human decision making process.
 
 ## Dataset Source<br>
-This dataset contains information on default payments, demographic factors, credit limit, history of payments, and bill statements of credit card clients in Taiwan from April 2005 to September 2005.
+1. Credit card Default dataset -This dataset contains information on default payments, demographic factors, credit limit, history of payments, and bill statements of credit card clients in Taiwan from April 2005 to September 2005. <br>
+2. European client's credit dataset - it contains around 300,000 records of European clients from September 2013. The attributes are PCA reduced. Original dataset can be found <a href = "https://www.kaggle.com/mlg-ulb/creditcardfraud">here</a>
 
 ## Project Overview<br>
 The analysis consists of 2 Jupyter notebooks.
-1. Exploratory Data Analysis. The detailed notebook of EDA can be found <a href="https://github.com/teresanan/credit-card-default-prediction/blob/master/EDA/credit_card_default_analysis_part1_EDA.ipynb">here</a>.
-2. Machine Learning Modeling. The detailed notebook of modeling can be found <a href="https://github.com/teresanan/credit-card-default-prediction/blob/master/Modeling/credit_card_default_part2_modeling.ipynb">here</a>.
+1. Exploratory Data Analysis. The detailed notebook of EDA can be found <a href="https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/credit_card_default_analysis_part1_EDA.ipynb">here</a>.
+2. Machine Learning Modeling. The detailed notebook of modeling can be found <a href="https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/credit_card_default_part2_modeling.ipynb">here</a>.
 
 Machine Learning Models Used: 
 1. Logistic Regression
