@@ -6,9 +6,10 @@ The purpose of this project is to conduct quantitative analysis on credit card d
 2. European client's credit dataset - it contains around 300,000 records of European clients from September 2013. The attributes are PCA reduced. Original dataset can be found <a href = "https://www.kaggle.com/mlg-ulb/creditcardfraud">here</a>
 
 ## Project Overview<br>
-The analysis consists of 2 Jupyter notebooks.
-1. Exploratory Data Analysis. The detailed notebook of EDA can be found <a href="https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/credit_card_default_analysis_part1_EDA.ipynb">here</a>.
-2. Machine Learning Modeling. The detailed notebook of modeling can be found <a href="https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/credit_card_default_part2_modeling.ipynb">here</a>.
+The analysis consists of 3 Jupyter notebooks.
+1. Exploratory Data Analysis. The detailed notebook of EDA for Taiwan credit default dataset can be found <a href="https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/credit_card_default_analysis_part1_EDA.ipynb">here</a>.
+2. Machine Learning Modeling. The detailed notebook of modeling for Taiwan credit default dataset can be found <a href="https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/credit_card_default_part2_modeling.ipynb">here</a>.
+3. Machine Learnings Modelling. The detailed notebook of modelling for European credit default dataset an be found <a href = "https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/EuropeanCreditDefault.ipynb">here</a>
 
 Machine Learning Models Used: 
 1. Logistic Regression
