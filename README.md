@@ -3,13 +3,15 @@ The purpose of this project is to conduct quantitative analysis on credit card d
 
 ## Dataset Source<br>
 1. Credit card Default dataset -This dataset contains information on default payments, demographic factors, credit limit, history of payments, and bill statements of credit card clients in Taiwan from April 2005 to September 2005. <br>
-2. European client's credit dataset - it contains around 300,000 records of European clients from September 2013. The attributes are PCA reduced. Original dataset can be found <a href = "https://www.kaggle.com/mlg-ulb/creditcardfraud">here</a>
+2. European client's credit default dataset - it contains around 300,000 records of European clients from September 2013. The attributes are PCA reduced. Original dataset can be found <a href = "https://www.kaggle.com/mlg-ulb/creditcardfraud">here</a>
+3. South German Client's credit default dataset - it contains 1000 records of South German clients from 1973 to 1975. Original dataset can be found <a href ="https://archive.ics.uci.edu/ml/datasets/South+German+Credit+%28UPDATE%29">here</a>
 
 ## Project Overview<br>
-The analysis consists of 3 Jupyter notebooks.
-1. Exploratory Data Analysis. The detailed notebook of EDA for Taiwan credit default dataset can be found <a href="https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/credit_card_default_analysis_part1_EDA.ipynb">here</a>.
-2. Machine Learning Modeling. The detailed notebook of modeling for Taiwan credit default dataset can be found <a href="https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/credit_card_default_part2_modeling.ipynb">here</a>.
-3. Machine Learnings Modelling. The detailed notebook of modelling for European credit default dataset an be found <a href = "https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/EuropeanCreditDefault.ipynb">here</a>
+The analysis consists of 4 Jupyter notebooks.
+1. Exploratory Data Analysis of Taiwan dataset. The detailed notebook of EDA for Taiwan credit default dataset can be found <a href="https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/credit_card_default_analysis_part1_EDA.ipynb">here</a>.
+2. Machine Learning Modeling of Taiwan dataset. The detailed notebook of modeling for Taiwan credit default dataset can be found <a href="https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/credit_card_default_part2_modeling.ipynb">here</a>.
+3. Machine Learnings Modelling of European (Belgium) dataset. The detailed notebook of modelling for European credit default dataset can be found <a href = "https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/EuropeanCreditDefault.ipynb">here</a>
+4. Machine Learning Modelling of South German dataset. The detailed notebook of modelling for South German dataset can be found <a href = "https://github.com/harsh2k1/Project-Credit-Card-Default-Prediction/blob/main/SouthGermanDefault.ipynb">here</a>
 
 Machine Learning Models Used: 
 1. Logistic Regression
@@ -20,28 +22,31 @@ Machine Learning Models Used:
 
 
 
-## Key Findings from EDA
+## Key Findings from EDA for Taiwan dataset
 1. Males have more delayed payment than females in this dataset. Keep in mind that this finding only applies to this dataset, it does not imply this is true for other datasets.
 2. Customers with higher education have less default payments and higher credit limits.
 3. Customers aged between 30-50 have the lowest delayed payment rate, while younger groups (20-30) and older groups (50-70) all have higher delayed payment rates. However, the delayed rate drops slightly again in customers older than 70.
 4. There appears to be no correlation between default payment and marital status.
 5. Customers being inactive doesn’t mean they have no default risk. We found 317 out of 870 inactive customers who had no consumption in 6 months then defaulted next month.
 
-## Model Comparison
+## Model Comparison for Taiwan dataset
 In these 3 models, Logistic Regression model has the highest recall but the lowest precision, if the firm expects high recall, then this model is the best candidate. If the balance of recall and precision is the most important metric, then Random Forest is the ideal model. Since Random Forest has slightly lower recall but much higher precision than Logistic Regression, we recommend the Random Forest model. 
 ![](Figures/model_comparison.png)
 
-## Recommendations Based on Modeling
+## Recommendations Based on Modeling for European dataset
 Below is our suggested recall plot. Note the threshold can be adjusted to reach higher recall.
 ![](Figures/recommended_recall.png)
 
-## Limitations
+## Limitations of Taiwan dataset
 1. Best model Random Forest can only detect 51% of default. 
 2. Model can only be served as an aid in decision making instead of replacing human decision.
 3. Used only 30,000 records and not from US consumers.
 
-## Future Work
+## Future Work for Taiwan dataset
 1. Models are not exhaustive. Other models could perform better.
 2. Get more computational resources to tune XGBoost parameters.
-3. Acquire US customer data and more useful features.I.e.customer income.
+3. Acquire US customer data and more useful features.I.e.customer income. <br><br>
+
+Adding more documentation soon.
+
 
